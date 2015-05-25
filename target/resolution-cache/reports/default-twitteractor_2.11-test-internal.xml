@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="twitteractor_2.11"
+		revision="1.0"
+		conf="test-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20150525114652"/>
+	<dependencies>
+		<module organisation="org.twitter4j" name="twitter4j-async">
+			<revision name="4.0.3" status="release" pubdate="20150328114110" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://twitter4j.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="2">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3197" time="0" location="/home/eerilio/.ivy2/cache/org.twitter4j/twitter4j-async/ivy-4.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/twitter4j/twitter4j-async/4.0.3/twitter4j-async-4.0.3.pom"/>
+				<caller organisation="default" name="twitteractor_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.0.3" rev-constraint-default="4.0.3" rev-constraint-dynamic="4.0.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="twitter4j-async" type="jar" ext="jar" status="no" details="" size="202310" time="0" location="/home/eerilio/.ivy2/cache/org.twitter4j/twitter4j-async/jars/twitter4j-async-4.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/twitter4j/twitter4j-async/4.0.3/twitter4j-async-4.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.twitter4j" name="twitter4j-core">
+			<revision name="4.0.3" status="release" pubdate="20150328114039" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://twitter4j.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="1">
+				<license name="Apache License 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="3641" time="0" location="/home/eerilio/.ivy2/cache/org.twitter4j/twitter4j-core/ivy-4.0.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/4.0.3/twitter4j-core-4.0.3.pom"/>
+				<caller organisation="org.twitter4j" name="twitter4j-async" conf="default, compile, runtime, master" rev="4.0.3" rev-constraint-default="4.0.3" rev-constraint-dynamic="4.0.3" callerrev="4.0.3"/>
+				<caller organisation="default" name="twitteractor_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="4.0.3" rev-constraint-default="4.0.3" rev-constraint-dynamic="4.0.3" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="twitter4j-core" type="jar" ext="jar" status="no" details="" size="287459" time="0" location="/home/eerilio/.ivy2/cache/org.twitter4j/twitter4j-core/jars/twitter4j-core-4.0.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/twitter4j/twitter4j-core/4.0.3/twitter4j-core-4.0.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.6" status="release" pubdate="20150225200105" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.6/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2653" time="0" location="/home/eerilio/.ivy2/cache/org.scala-lang/scala-library/ivy-2.11.6.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.pom"/>
+				<caller organisation="default" name="twitteractor_2.11" conf="test, compile, provided, test-internal, runtime, optional" rev="2.11.6" rev-constraint-default="2.11.6" rev-constraint-dynamic="2.11.6" callerrev="1.0"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5564007" time="0" location="/home/eerilio/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.6.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.6/scala-library-2.11.6.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
