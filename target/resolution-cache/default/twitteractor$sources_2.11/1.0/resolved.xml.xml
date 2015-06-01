@@ -4,7 +4,7 @@
 		module="twitteractor$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150525113817"
+		publication="20150525150823"
 	/>
 	<configurations>
 		<conf name="default" visibility="public" description=""/>

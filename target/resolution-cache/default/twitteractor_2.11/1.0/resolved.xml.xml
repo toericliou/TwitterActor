@@ -4,7 +4,7 @@
 		module="twitteractor_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20150525114652"
+		publication="20150525155906"
 	>
 		<description>
 		TwitterActor
@@ -36,5 +36,7 @@
 		<dependency org="org.scala-lang" name="scala-library" rev="2.11.6" conf="scala-tool->default,optional(default);compile->default(compile)"/>
 		<dependency org="org.twitter4j" name="twitter4j-core" rev="4.0.3" conf="compile->default(compile)"/>
 		<dependency org="org.twitter4j" name="twitter4j-async" rev="4.0.3" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-actor_2.11" rev="2.3.11" conf="compile->default(compile)"/>
+		<dependency org="com.typesafe.akka" name="akka-cluster_2.11" rev="2.3.11" conf="compile->default(compile)"/>
 	</dependencies>
 </ivy-module>
