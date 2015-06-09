@@ -1,5 +1,6 @@
+import TwitterHandler.ResultHandler
 import twitter4j.conf.ConfigurationBuilder
-import twitter4j.{Query, QueryResult, TwitterFactory}
+import twitter4j.{Query, TwitterFactory}
 
 /**
  * Created by eerilio on 5/25/15.
@@ -21,7 +22,7 @@ class ServerReq (hashTag:String, count:Int, interval: Long , resultHandler: Resu
       while (true) {
         query.count(count)
         val queryResult = twitter.search(query)
-        resultHandler.handle(queryResult)
+        //resultHandler.handle(queryResult)
         Thread sleep interval
       }
     } catch {
@@ -34,6 +35,4 @@ class ServerReq (hashTag:String, count:Int, interval: Long , resultHandler: Resu
   }
 }
 
-trait ResultHandler {
-  def handle(queryResult: QueryResult)
-}
+

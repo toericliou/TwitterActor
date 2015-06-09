@@ -1,6 +1,6 @@
 package Actors
 
-import Message.GleeTweet
+import Message.SentGleeTweet
 import akka.actor.{Actor, ActorLogging}
 
 /**
@@ -10,7 +10,7 @@ class Glee extends Actor with ActorLogging {
   var message = ""
 
   def receive = {
-    case GleeTweet(date, id, text, address) => log.info("{} - {}", id, text)
+    case SentGleeTweet(date, id, text, address) => log.info("{} - {}", id, text)
     case _ => //DoNth
   }
 }
